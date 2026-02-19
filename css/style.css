@@ -40,7 +40,8 @@
   --transition-fast: all 0.2s ease;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+*, *::before, *::after { box-sizing: border-box; }
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -212,6 +213,7 @@ h3 { font-size: 1.2rem; }
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .logo { display: flex; align-items: center; gap: 10px; }
@@ -434,6 +436,7 @@ h3 { font-size: 1.2rem; }
 .trusted-strip {
   padding: 40px 0;
   background: var(--gray-100);
+  overflow: hidden;
   border-bottom: 1px solid var(--gray-300);
 }
 
