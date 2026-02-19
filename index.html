@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataExpert - Datalab Pantheon ERP</title>
+  <meta name="description" content="Implementacija Pantheon ERP informacionog sistema - verovatno najbolji poslovni knjigovodstveni program u regionu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#page-top" class="logo">
+        <img src="img/logo.png" alt="DataExpert logo">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#page-top" class="active">Početna</a>
+        <a href="#pantheon">Pantheon</a>
+        <a href="#reference">Reference</a>
+        <a href="#cenovnik">Cene</a>
+        <a href="#novosti">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+      <div class="nav-cta">
+        <a href="kontakt.html" class="btn btn-primary">Pošaljite upit</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Otvori meni">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="page-top">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-line"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Ovlašćeni Datalab partner
+        </div>
+        <h1>Datalab <span class="highlight">Pantheon</span> ERP informacioni sistem</h1>
+        <p class="hero-desc">Verovatno najbolji poslovni knjigovodstveni program u regionu. Optimizujte poslovanje, automatizujte procese i donosite odluke zasnovane na podacima.</p>
+        <div class="hero-buttons">
+          <a href="kontakt.html" class="btn btn-primary">Pošaljite upit već danas &#8594;</a>
+          <a href="#pantheon" class="btn btn-ghost">Više o Pantheon-u</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-showcase">
+          <div class="hero-floating-badge">&#10003; Verifikovan partner</div>
+          <div class="main-card">
+            <img src="img/erp2.png" alt="Pantheon ERP sistem" class="erp-image">
+            <div class="stat-grid">
+              <div class="stat-item">
+                <span class="number">2000+</span>
+                <span class="label">Uspešnih implementacija</span>
+              </div>
+              <div class="stat-item">
+                <span class="number">80000+</span>
+                <span class="label">Korisnika Pantheona</span>
+              </div>
+              <div class="stat-item">
+                <span class="number">26+</span>
+                <span class="label">Godina iskustva</span>
+              </div>
+              <div class="stat-item">
+                <span class="number">24/7</span>
+                <span class="label">Podrška klijentima</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TRUSTED STRIP ==================== -->
+  <div class="trusted-strip">
+    <div class="container">
+      <div class="label">Pantheon uspešno koristi više od 80.000 korisnika u Srbiji i regionu</div>
+      <div class="logo-marquee">
+        <div class="logo-track">
+          <img src="img/clients/stiga.png" alt="Stiga">
+          <img src="img/clients/venco.png" alt="Venco">
+          <img src="img/clients/gemax.png" alt="Gemax">
+          <img src="img/clients/dunavplast.png" alt="Dunav Plast">
+          <img src="img/clients/intec.png" alt="Intec">
+          <img src="img/clients/vipol.png" alt="Vipol">
+          <img src="img/clients/stg.png" alt="STG">
+          <img src="img/clients/eee.png" alt="EEE">
+          <img src="img/clients/sebastijan.png" alt="Sebastijan">
+          <img src="img/clients/dunavne.png" alt="Dunavne">
+          <img src="img/clients/mg.jpg" alt="MG">
+          <img src="img/clients/audio-bm.jpg" alt="Audio BM">
+          <img src="img/clients/akva.jpg" alt="Akva">
+          <img src="img/clients/migor.jpg" alt="Migor">
+          <img src="img/clients/stiga.png" alt="Stiga">
+          <img src="img/clients/venco.png" alt="Venco">
+          <img src="img/clients/gemax.png" alt="Gemax">
+          <img src="img/clients/dunavplast.png" alt="Dunav Plast">
+          <img src="img/clients/intec.png" alt="Intec">
+          <img src="img/clients/vipol.png" alt="Vipol">
+          <img src="img/clients/stg.png" alt="STG">
+          <img src="img/clients/eee.png" alt="EEE">
+          <img src="img/clients/sebastijan.png" alt="Sebastijan">
+          <img src="img/clients/dunavne.png" alt="Dunavne">
+          <img src="img/clients/mg.jpg" alt="MG">
+          <img src="img/clients/audio-bm.jpg" alt="Audio BM">
+          <img src="img/clients/akva.jpg" alt="Akva">
+          <img src="img/clients/migor.jpg" alt="Migor">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PANTHEON ERP ==================== -->
+  <section id="pantheon">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-label">Poslovni program</span>
+          <h2>Poslovni program PANTHEON (ERP)</h2>
+          <p>PANTHEON je poslovni program koji obezbeđuje uvid u stanje magacina i porudžbina u svakom trenutku. Sistem povezuje magacinsko poslovanje sa ostalim odeljenjima, omogućavajući brže radne tokove i sprečavajući kašnjenje narudžbina.</p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-icon"><img src="img/erp2.png" alt="" style="width:28px; height:28px; object-fit:contain;"></div>
+              <div>
+                <h4>Optimizacija i ušteda troškova</h4>
+                <p>Povezivanjem odeljenja štedite vreme i novac, smanjujete greške i povećavate produktivnost zaposlenih.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><img src="img/supp1.png" alt="" style="width:28px; height:28px; object-fit:contain;"></div>
+              <div>
+                <h4>Zadovoljni korisnici</h4>
+                <p>Uvid u stanje zaliha i narudžbina omogućava precizne rokove isporuke i glatke poslovne procese.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">&#128202;</div>
+              <div>
+                <h4>Precizno planiranje</h4>
+                <p>Donosite odluke na osnovu kvalitetnih podataka i uskladite strateške planove sa finansijskim rezultatima.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-showcase">
+            <img src="img/supp1.png" alt="Pantheon podrška" class="supp-image">
+            <div class="about-showcase-body">
+              <h3>Sve na jednom mestu</h3>
+              <p>Pantheon objedinjuje magacin, finansije, prodaju, nabavku i ljudske resurse u jedinstven, integrisan sistem koji raste sa vašim poslovanjem.</p>
+              <div class="pantheon-badge">
+                <img src="img/palogo.png" alt="Pantheon logo">
+                <span>Datalab Pantheon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BESPLATNA PREZENTACIJA ==================== -->
+  <div class="cta-banner">
+    <div class="container">
+      <h2>Besplatna prezentacija i DEMO!</h2>
+      <p>Zakažite besplatnu prezentaciju Pantheon ERP sistema i uverite se u sve prednosti na konkretnom primeru vašeg poslovanja.</p>
+      <a href="kontakt.html" class="btn">Pošalji upit &#8594;</a>
+    </div>
+  </div>
+
+  <!-- ==================== KAKO ERP POBOLJŠAVA POSLOVANJE ==================== -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-label">Prednosti</span>
+        <h2>Kako poslovno informacioni sistem poboljšava poslovanje?</h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="icon">&#128202;</div>
+          <h3>Pravi podaci u pravo vreme</h3>
+          <p>Pratite svaki korak u vašem preduzeću i preduzmite odgovarajuće akcije na osnovu činjenica, a ne nagađanja.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="icon">&#127919;</div>
+          <h3>Kompletna kontrola poslovanja</h3>
+          <p>Centralizovan uvid u računovodstvo, logistiku, plaćanja i zalihe iz jednog sistema u svakom trenutku.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="icon">&#128200;</div>
+          <h3>Poslovna analitika</h3>
+          <p>Bez poznavanja prošlosti ne možete planirati budućnost. Pantheon vam daje kompletnu sliku za donošenje strateških odluka.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="icon">&#128640;</div>
+          <h3>Platforma za rast</h3>
+          <p>Fleksibilan i kontinuirano razvijan program koji raste zajedno sa vašim poslovanjem — od mikro firme do korporacije.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== RAČUNOVOĐA I PANTHEON ==================== -->
+  <section class="bg-dark-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-showcase">
+            <img src="img/hero-bg.jpg" alt="Računovodstvo" class="supp-image">
+            <div class="about-showcase-body">
+              <h3>Digitalizacija menja način rada</h3>
+              <p>Automatizovani procesi pojednostavljuju svakodnevni rad, od knjiženja do izveštavanja, uz stalnu profesionalnu podršku Datalab tima.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <span class="section-label">Računovodstvo</span>
+          <h2>Računovođa i program za računovodstvo</h2>
+          <p>Moderne računovođe sa razlogom koriste PANTHEON. Digitalizacija je promenila način poslovanja — automatizovani procesi pojednostavljuju svakodnevne zadatke.</p>
+          <p>Program omogućava jednostavno knjigovodstvo, obračun plata, pripremu izveštaja i kompletnu komunikaciju sa poreskim organima. Pantheon tim za korisnike pruža podršku i obuku za sve module sistema.</p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-icon">&#128176;</div>
+              <div>
+                <h4>Automatski obračun plata</h4>
+                <p>Kompletan obračun zarada u skladu sa zakonskom regulativom.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">&#128220;</div>
+              <div>
+                <h4>E-fakture i fiskalizacija</h4>
+                <p>Usklađenost sa SEF-om, arhivskom knjigom i svim zakonskim propisima.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">&#128274;</div>
+              <div>
+                <h4>Profesionalna podrška</h4>
+                <p>Obuka i tehnička podrška za sve module Pantheon sistema.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ZAŠTO PANTHEON ==================== -->
+  <section id="why-pantheon">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-label">Zašto Pantheon</span>
+        <h2>Zašto izabrati Pantheon?</h2>
+        <p>Regionalni program za mala, srednja i velika preduzeća</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="icon">&#9878;</div>
+          <h4>Uvek u skladu sa propisima</h4>
+          <p>Uvek u skladu sa svim propisima koje nalaže zakonodavstvo. Automatska ažuriranja garantuju usklađenost.</p>
+        </div>
+        <div class="why-item">
+          <div class="icon">&#128273;</div>
+          <h4>Fleksibilno licenciranje</h4>
+          <p>Kombinujte licence prema potrebama radnih mesta i uštedite, bez žrtvovanja funkcionalnosti.</p>
+        </div>
+        <div class="why-item">
+          <div class="icon">&#128640;</div>
+          <h4>Laka nadogradnja licenci</h4>
+          <p>Prelazak na viši model licence je jednostavan i bez prekida u radu. Vaše poslovanje raste — Pantheon raste sa njim.</p>
+        </div>
+        <div class="why-item">
+          <div class="icon">&#128279;</div>
+          <h4>Integracija sa trećim stranama</h4>
+          <p>Povezivanje sa SAP-om, Garsonom, Total Observer-om, web prodavnicama i drugim softverskim rešenjima.</p>
+        </div>
+        <div class="why-item">
+          <div class="icon">&#128161;</div>
+          <h4>eProces — besplatno uključen</h4>
+          <p>Automatizacija poslovnih tokova besplatno uključena u sve PANTHEON licence.</p>
+        </div>
+        <div class="why-item">
+          <div class="icon">&#127760;</div>
+          <h4>80.000+ korisnika u regionu</h4>
+          <p>Dokazan sistem koji uspešno koriste desetine hiljada kompanija u Srbiji i čitavom regionu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CENOVNIK ==================== -->
+  <section class="bg-light" id="cenovnik">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-label">Cenovnik</span>
+        <h2>Cenovnik Pantheon licenci</h2>
+        <p>Izaberite licencu koja najbolje odgovara vašem poslovanju</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <span class="tier-icon">&#127793;</span>
+          <h3>Pantheon LX / LT</h3>
+          <p class="subtitle">Za mala preduzeća i preduzetnike</p>
+          <ul class="features">
+            <li>Osnovno knjigovodstvo</li>
+            <li>Upravljanje magacinom</li>
+            <li>Fakturisanje</li>
+            <li>Obračun plata</li>
+            <li>Ograničenje: do 3 kompanije</li>
+            <li>LX — 1 korisnik, LT — do 3 korisnika</li>
+            <li>eProces modul uključen</li>
+          </ul>
+          <a href="kontakt.html" class="btn btn-ghost" style="width:100%; justify-content:center;">Zatražite ponudu</a>
+        </div>
+        <div class="pricing-card featured">
+          <span class="badge">Popularno</span>
+          <span class="tier-icon">&#127775;</span>
+          <h3>Pantheon SE / GE</h3>
+          <p class="subtitle">Za srednja preduzeća</p>
+          <ul class="features">
+            <li>Sve iz LX/LT paketa</li>
+            <li>Višekompanijsko upravljanje</li>
+            <li>Napredni izveštaji i analitika</li>
+            <li>Više istovremenih korisnika</li>
+            <li>Integracije sa eksternim sistemima</li>
+            <li>SE — do 3 kompanije, GE — neograničeno</li>
+            <li>eProces modul uključen</li>
+          </ul>
+          <a href="kontakt.html" class="btn btn-primary" style="width:100%; justify-content:center;">Zatražite ponudu</a>
+        </div>
+        <div class="pricing-card">
+          <span class="tier-icon">&#128142;</span>
+          <h3>Pantheon ME / MF</h3>
+          <p class="subtitle">Za velike kompanije i proizvodnju</p>
+          <ul class="features">
+            <li>Sve iz SE/GE paketa</li>
+            <li>Proizvodni modul (MF)</li>
+            <li>Napredna poslovna analitika</li>
+            <li>Neograničen broj kompanija</li>
+            <li>Prioritetna podrška</li>
+            <li>RT/MT dodatne licence dostupne</li>
+            <li>eProces modul uključen</li>
+          </ul>
+          <a href="kontakt.html" class="btn btn-ghost" style="width:100%; justify-content:center;">Zatražite ponudu</a>
+        </div>
+      </div>
+
+      <!-- License pricing image - full width -->
+      <div class="license-details">
+        <div class="license-image-wrap" id="licenseZoom">
+          <div class="img-label">
+            <h3>&#128179; Tabela cena licenci</h3>
+            <span class="zoom-hint">&#128269; Kliknite za uvećanje</span>
+          </div>
+          <img src="img/cene-licenci.png" alt="Cenovnik Pantheon licenci" class="license-image">
+        </div>
+
+        <!-- Rules as cards -->
+        <div class="license-rules-grid">
+          <div class="license-rule-card">
+            <span class="rule-icon">&#128196;</span>
+            <h4>Samostalne licence</h4>
+            <p>LX, LT, RE, SE, GE, ME, MF su samostalne licence. RT i MT su dodatne licence sa proširenom funkcionalnošću.</p>
+          </div>
+          <div class="license-rule-card">
+            <span class="rule-icon">&#127970;</span>
+            <h4>Ograničenje kompanija</h4>
+            <p>LX, LT, RE, SE — do 3 kompanije. ME, GE, MF — neograničen broj kompanija.</p>
+          </div>
+          <div class="license-rule-card">
+            <span class="rule-icon">&#128257;</span>
+            <h4>Kombinacije licenci</h4>
+            <p>RE + SE/ME/MF. RT + RE/SE/ME/MF. MT + MF. Sve licence se mogu kombinovati sa PANTHEON Web Light.</p>
+          </div>
+          <div class="license-rule-card">
+            <span class="rule-icon">&#128101;</span>
+            <h4>Korisnici</h4>
+            <p>LX — 1 korisnik po kompaniji. LT — do 3 korisnika (mrežna licenca). Jedna LX ili jedna LT po kompaniji.</p>
+          </div>
+          <div class="license-rule-card">
+            <span class="rule-icon">&#128200;</span>
+            <h4>Nadogradnja</h4>
+            <p>Razlika u ceni važi za nadogradnju svih verzija. Prelazak na viši model je jednostavan.</p>
+          </div>
+          <div class="license-rule-card">
+            <span class="rule-icon">&#127760;</span>
+            <h4>Web Light</h4>
+            <p>Sve licence (LX, LT, RE, SE, ME, MF) mogu se kombinovati sa PANTHEON Web Light modulom.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Zoom overlay -->
+      <div class="license-overlay" id="licenseOverlay">
+        <button class="close-btn" aria-label="Zatvori">&#10005;</button>
+        <img src="img/cene-licenci.png" alt="Cenovnik Pantheon licenci - uvećano">
+      </div>
+
+      <p class="pricing-note">Dostupne su i RE, RT, MT licence za specifične potrebe. Kontaktirajte nas za detaljnu ponudu prilagođenu vašem poslovanju.</p>
+    </div>
+  </section>
+
+  <!-- ==================== REFERENCE ==================== -->
+  <section class="bg-light" id="reference">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-label">Reference</span>
+        <h2>Uspešne implementacije Pantheon-a&#8230;</h2>
+        <p>Mnogo toga bismo želeli reći, ali izdvojili smo sledeće</p>
+      </div>
+      <div class="ref-grid">
+        <div class="ref-card">
+          <img src="img/clients/mg.jpg" alt="MG">
+          <span class="ref-name">MG</span>
+        </div>
+        <div class="ref-card">
+          <img src="img/clients/zivinastija.jpg" alt="Živinastija">
+          <span class="ref-name">Živinastija</span>
+        </div>
+        <div class="ref-card">
+          <img src="img/clients/venco.png" alt="Venco">
+          <span class="ref-name">Venco</span>
+        </div>
+        <div class="ref-card">
+          <img src="img/clients/stiga.png" alt="Stiga">
+          <span class="ref-name">Stiga</span>
+        </div>
+        <div class="ref-card">
+          <img src="img/clients/sebastijan.png" alt="Sebastijan">
+          <span class="ref-name">Sebastijan</span>
+        </div>
+        <div class="ref-card">
+          <img src="img/clients/audio-bm.jpg" alt="Audio BM">
+          <span class="ref-name">Audio BM</span>
+        </div>
+        <div class="ref-card">
+          <img src="img/clients/ag.jpg" alt="AG">
+          <span class="ref-name">AG</span>
+        </div>
+        <div class="ref-card">
+          <img src="img/clients/stg.png" alt="STG">
+          <span class="ref-name">STG</span>
+        </div>
+        <div class="ref-card">
+          <img src="img/clients/intec.png" alt="Intec">
+          <span class="ref-name">Intec</span>
+        </div>
+        <div class="ref-card">
+          <img src="img/clients/eee.png" alt="EEE">
+          <span class="ref-name">EEE</span>
+        </div>
+        <div class="ref-card">
+          <img src="img/clients/vipol.png" alt="Vipol">
+          <span class="ref-name">Vipol</span>
+        </div>
+        <div class="ref-card">
+          <img src="img/clients/ilumina.jpg" alt="Ilumina">
+          <span class="ref-name">Ilumina</span>
+        </div>
+        <div class="ref-card">
+          <img src="img/clients/dunavne.png" alt="Dunavne">
+          <span class="ref-name">Dunavne</span>
+        </div>
+        <div class="ref-card">
+          <img src="img/clients/gemax.png" alt="Gemax Gradnja">
+          <span class="ref-name">Gemax</span>
+        </div>
+        <div class="ref-card">
+          <img src="img/clients/akva.jpg" alt="Akva">
+          <span class="ref-name">Akva</span>
+        </div>
+        <div class="ref-card">
+          <img src="img/clients/envia.jpg" alt="Envia">
+          <span class="ref-name">Envia</span>
+        </div>
+        <div class="ref-card">
+          <img src="img/clients/dunavplast.png" alt="Dunav Plast">
+          <span class="ref-name">Dunav Plast</span>
+        </div>
+        <div class="ref-card">
+          <img src="img/clients/migor.jpg" alt="Migor">
+          <span class="ref-name">Migor</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== NOVOSTI ==================== -->
+  <section class="bg-dark-section" id="novosti">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-label">Novosti</span>
+        <h2>Novosti</h2>
+        <p>Najnovije vesti i aktuelnosti iz sveta Pantheon ERP sistema</p>
+      </div>
+      <div class="news-grid">
+        <a href="blog/sms-obavestenja.html" class="news-card">
+          <div class="card-image" style="background: linear-gradient(135deg, #dc2626, #991b1b);">
+            &#128172;
+            <span class="date-badge">02. apr 2024.</span>
+          </div>
+          <div class="card-body">
+            <span class="tag">Pantheon</span>
+            <h3>Aktivno SMS obaveštenje kupaca iz PANTHEON-a</h3>
+            <p>PANTHEON omogućava sveobuhvatno upravljanje važnim poslovnim informacijama, uključujući blagovremeno obaveštavanje korisnika putem SMS poruka.</p>
+            <span class="read-more">Pročitajte više &#8594;</span>
+          </div>
+        </a>
+        <a href="blog/eproces.html" class="news-card">
+          <div class="card-image" style="background: linear-gradient(135deg, #18181b, #3f3f46);">
+            &#9881;
+            <span class="date-badge">02. apr 2024.</span>
+          </div>
+          <div class="card-body">
+            <span class="tag">Pantheon</span>
+            <h3>Šta omogućava PANTHEON eProces?</h3>
+            <p>eProces je besplatno uključen u sve PANTHEON licence! Primeri u kojima PANTHEON eProces optimizuje vaše poslovne procese.</p>
+            <span class="read-more">Pročitajte više &#8594;</span>
+          </div>
+        </a>
+        <a href="blog/pantheon-konferencija.html" class="news-card">
+          <div class="card-image" style="background: linear-gradient(135deg, #7f1d1d, #dc2626);">
+            &#127891;
+            <span class="date-badge">02. apr 2024.</span>
+          </div>
+          <div class="card-body">
+            <span class="tag">Događaj</span>
+            <h3>Pantheon konferencija — PANCON 2024</h3>
+            <p>Konferencija PANCON 2024 se održava u hotelu Izvor u Aranđelovcu — 23. i 24. maja. Prijavite se na vreme!</p>
+            <span class="read-more">Pročitajte više &#8594;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>Spremni da digitalizujete poslovanje?</h2>
+        <p>Kontaktirajte nas danas i saznajte kako Pantheon ERP može transformisati vaše poslovanje.</p>
+        <a href="kontakt.html" class="btn btn-primary">Zatražite besplatnu konsultaciju &#8594;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#page-top" class="logo">
+              <img src="img/logo.png" alt="DataExpert logo">
+            </a>
+            <p>Ovlašćeni partner za implementaciju Datalab Pantheon ERP sistema u Srbiji.</p>
+            <div class="tagline">Posvećeni znanju, posvećeni korisnicima.</div>
+          </div>
+          <div>
+            <h4>Navigacija</h4>
+            <div class="footer-links">
+              <a href="#page-top">Početna</a>
+              <a href="#pantheon">Pantheon</a>
+              <a href="#reference">Reference</a>
+              <a href="#cenovnik">Cene</a>
+              <a href="#novosti">Novosti</a>
+              <a href="kontakt.html">Kontakt</a>
+            </div>
+          </div>
+          <div class="footer-news">
+            <h4>Novosti</h4>
+            <div class="footer-links">
+              <a href="blog/sms-obavestenja.html">SMS obaveštenja</a>
+              <a href="blog/eproces.html">eProces modul</a>
+              <a href="blog/pantheon-konferencija.html">PANCON 2024</a>
+            </div>
+          </div>
+          <div>
+            <h4>Kontakt info</h4>
+            <div class="footer-contact-item">
+              <div class="fc-icon">&#128205;</div>
+              <div class="fc-text">
+                <div class="fc-label">Adresa</div>
+                <span>Bate Brkića 10A/58, Novi Sad</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <div class="fc-icon">&#128222;</div>
+              <div class="fc-text">
+                <div class="fc-label">Telefon</div>
+                <a href="tel:+381213833344">+381 21 38 333 44</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <div class="fc-icon">&#9993;</div>
+              <div class="fc-text">
+                <div class="fc-label">Email</div>
+                <a href="mailto:info@dataexpert.rs">info@dataexpert.rs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2024 DataExpert. Sva prava zadržana.</span>
+          <span>Pantheon ERP partner</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress-wrap" id="scrollWrap">
+    <svg width="56" height="56" viewBox="0 0 56 56">
+      <circle class="scroll-progress-bg" cx="28" cy="28" r="25"/>
+      <circle class="scroll-progress-bar" id="scrollCircle" cx="28" cy="28" r="25"
+        stroke-dasharray="157" stroke-dashoffset="157"/>
+    </svg>
+    <button class="scroll-progress-btn" id="scrollBtn" aria-label="Nazad na vrh">
+      <span class="arrow">&#9650;</span>
+      <span class="pct" id="scrollPct">0%</span>
+    </button>
+  </div>
+
+  <script>
+    // Cursor glow
+    const glow = document.getElementById('cursorGlow');
+    document.addEventListener('mousemove', (e) => {
+      glow.style.left = e.clientX + 'px';
+      glow.style.top = e.clientY + 'px';
+    });
+
+    // Scroll progress + navbar
+    const scrollWrap = document.getElementById('scrollWrap');
+    const scrollCircle = document.getElementById('scrollCircle');
+    const scrollPct = document.getElementById('scrollPct');
+    const circumference = 157;
+    const navbar = document.getElementById('navbar');
+
+    function updateScroll() {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = Math.min(Math.round((scrollTop / docHeight) * 100), 100);
+
+      // Progress circle
+      const offset = circumference - (pct / 100) * circumference;
+      scrollCircle.style.strokeDashoffset = offset;
+      scrollPct.textContent = pct + '%';
+
+      // Show/hide
+      scrollWrap.classList.toggle('visible', scrollTop > 300);
+
+      // Navbar shadow
+      navbar.classList.toggle('scrolled', scrollTop > 50);
+    }
+
+    window.addEventListener('scroll', updateScroll);
+
+    // Scroll to top
+    document.getElementById('scrollBtn').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Mobile nav
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+    });
+
+    // Active nav on scroll
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id');
+      });
+      document.querySelectorAll('.nav-links a').forEach(a => {
+        a.classList.remove('active');
+        if (current && a.getAttribute('href').includes(current)) a.classList.add('active');
+      });
+    });
+
+    // Intersection Observer for all animations
+    const animObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          animObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+
+    // Animate section titles & about grids
+    document.querySelectorAll('.section-title, .cta-inner').forEach(el => {
+      el.classList.add('anim-up');
+      animObserver.observe(el);
+    });
+
+    document.querySelectorAll('.about-text').forEach(el => {
+      el.classList.add('anim-left');
+      animObserver.observe(el);
+    });
+
+    document.querySelectorAll('.about-visual, .about-showcase').forEach(el => {
+      el.classList.add('anim-right');
+      animObserver.observe(el);
+    });
+
+    // Stagger grids
+    document.querySelectorAll('.benefits-grid, .why-grid, .pricing-grid, .news-grid, .ref-grid, .stat-grid').forEach(el => {
+      el.classList.add('stagger-children');
+      animObserver.observe(el);
+    });
+
+    // Scale in for CTA banner
+    document.querySelectorAll('.cta-banner').forEach(el => {
+      el.classList.add('anim-scale');
+      animObserver.observe(el);
+    });
+
+    // Counter animation for stats
+    const formatNum = (n) => n.toLocaleString('sr-RS');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const text = el.textContent;
+          const num = parseInt(text);
+          if (isNaN(num)) return;
+          const suffix = text.replace(/[0-9]/g, '');
+          const duration = 1800;
+          const start = performance.now();
+          const animate = (now) => {
+            const progress = Math.min((now - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            el.textContent = formatNum(Math.round(eased * num)) + suffix;
+            if (progress < 1) requestAnimationFrame(animate);
+          };
+          requestAnimationFrame(animate);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.stat-item .number').forEach(el => counterObserver.observe(el));
+
+
+    // Parallax on hero card on mouse move
+    const heroCard = document.querySelector('.main-card');
+    if (heroCard && window.matchMedia('(pointer: fine)').matches) {
+      document.querySelector('.hero').addEventListener('mousemove', (e) => {
+        const rect = heroCard.getBoundingClientRect();
+        const x = (e.clientX - rect.left - rect.width / 2) / rect.width;
+        const y = (e.clientY - rect.top - rect.height / 2) / rect.height;
+        heroCard.style.transform = `perspective(800px) rotateY(${x * 4}deg) rotateX(${-y * 4}deg)`;
+      });
+
+      document.querySelector('.hero').addEventListener('mouseleave', () => {
+        heroCard.style.transform = 'perspective(800px) rotateY(0) rotateX(0)';
+        heroCard.style.transition = 'transform 0.5s ease';
+        setTimeout(() => heroCard.style.transition = '', 500);
+      });
+    }
+
+    // License image zoom overlay
+    const licenseZoom = document.getElementById('licenseZoom');
+    const licenseOverlay = document.getElementById('licenseOverlay');
+    if (licenseZoom && licenseOverlay) {
+      licenseZoom.addEventListener('click', () => {
+        licenseOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+      licenseOverlay.addEventListener('click', (e) => {
+        if (e.target === licenseOverlay || e.target.classList.contains('close-btn')) {
+          licenseOverlay.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && licenseOverlay.classList.contains('active')) {
+          licenseOverlay.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

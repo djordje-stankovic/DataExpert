@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt - DataExpert</title>
+  <meta name="description" content="Kontaktirajte DataExpert tim za implementaciju Pantheon ERP sistema.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="DataExpert logo">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Početna</a>
+        <a href="index.html#pantheon">Pantheon</a>
+        <a href="index.html#reference">Reference</a>
+        <a href="index.html#cenovnik">Cene</a>
+        <a href="index.html#novosti">Novosti</a>
+        <a href="kontakt.html" class="active">Kontakt</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Otvori meni">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="page-header">
+    <h1>Kontaktirajte nas</h1>
+    <p>Rado ćemo odgovoriti na sva vaša pitanja o Pantheon ERP sistemu</p>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-label">Kontakt</span>
+          <h2>Razgovarajmo o vašem poslovanju</h2>
+          <p>Zainteresovani ste za Pantheon ERP sistem? Popunite formu ili nas kontaktirajte direktno. Naš tim stručnjaka je tu da vam pomogne da pronađete optimalno rešenje za vaše poslovanje.</p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="icon">&#128205;</div>
+              <div>
+                <h4>Adresa</h4>
+                <p>Bate Brkića 10A/58, Novi Sad</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="icon">&#128222;</div>
+              <div>
+                <h4>Telefon</h4>
+                <a href="tel:+381213833344">+381 21 38 333 44</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="icon">&#9993;</div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:info@dataexpert.rs">info@dataexpert.rs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent = 'Poruka poslata!'; this.querySelector('button').style.background = '#16a34a'; setTimeout(() => { this.reset(); this.querySelector('button').innerHTML = 'Pošaljite poruku &#8594;'; this.querySelector('button').style.background = ''; }, 3000);">
+          <h3>Pošaljite nam poruku</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Vaše ime</label>
+              <input type="text" id="name" name="name" placeholder="Unesite vaše ime" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Naziv kompanije</label>
+              <input type="text" id="company" name="company" placeholder="Naziv vaše kompanije">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email adresa</label>
+              <input type="email" id="email" name="email" placeholder="vas@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Kontakt telefon</label>
+              <input type="tel" id="phone" name="phone" placeholder="+381...">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Tema</label>
+            <input type="text" id="subject" name="subject" placeholder="O čemu se radi?">
+          </div>
+          <div class="form-group">
+            <label for="message">Poruka</label>
+            <textarea id="message" name="message" placeholder="Opišite nam vaše potrebe..." required></textarea>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Želim da primam obaveštenja o prilagođenim ponudama vezanim za PANTHEON</label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Pošaljite poruku &#8594;</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>Ili nas jednostavno pozovite</h2>
+        <p>Naš tim je dostupan radnim danima od 9 do 17 časova. Rado ćemo razgovarati o vašim potrebama.</p>
+        <a href="tel:+381213833344" class="btn btn-white">+381 21 38 333 44</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2805.123!2d19.8425!3d45.2551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b11c2e8b0e0e1%3A0x0!2sBate%20Brki%C4%87a%2010A%2C%20Novi%20Sad!5e0!3m2!1ssr!2srs!4v1700000000000!5m2!1ssr!2srs"
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="DataExpert lokacija - Novi Sad">
+      </iframe>
+      <div class="footer-map-overlay"></div>
+    </div>
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              <img src="img/logo.png" alt="DataExpert logo">
+            </a>
+            <p>Ovlašćeni partner za implementaciju Datalab Pantheon ERP sistema u Srbiji.</p>
+            <div class="tagline">Posvećeni znanju, posvećeni korisnicima.</div>
+          </div>
+          <div>
+            <h4>Navigacija</h4>
+            <div class="footer-links">
+              <a href="index.html">Početna</a>
+              <a href="index.html#pantheon">Pantheon</a>
+              <a href="index.html#reference">Reference</a>
+              <a href="index.html#cenovnik">Cene</a>
+              <a href="index.html#novosti">Novosti</a>
+            </div>
+          </div>
+          <div class="footer-news">
+            <h4>Novosti</h4>
+            <div class="footer-links">
+              <a href="blog/sms-obavestenja.html">SMS obaveštenja</a>
+              <a href="blog/eproces.html">eProces modul</a>
+              <a href="blog/pantheon-konferencija.html">PANCON 2024</a>
+            </div>
+          </div>
+          <div>
+            <h4>Kontakt info</h4>
+            <div class="footer-contact-item">
+              <div class="fc-icon">&#128205;</div>
+              <div class="fc-text">
+                <div class="fc-label">Adresa</div>
+                <span>Bate Brkića 10A/58, Novi Sad</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <div class="fc-icon">&#128222;</div>
+              <div class="fc-text">
+                <div class="fc-label">Telefon</div>
+                <a href="tel:+381213833344">+381 21 38 333 44</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <div class="fc-icon">&#9993;</div>
+              <div class="fc-text">
+                <div class="fc-label">Email</div>
+                <a href="mailto:info@dataexpert.rs">info@dataexpert.rs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2024 DataExpert. Sva prava zadržana.</span>
+          <span>Pantheon ERP partner</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const glow = document.getElementById('cursorGlow');
+    document.addEventListener('mousemove', (e) => {
+      glow.style.left = e.clientX + 'px';
+      glow.style.top = e.clientY + 'px';
+    });
+
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

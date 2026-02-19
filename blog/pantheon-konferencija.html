@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pantheon konferencija - PANCON 2024 - DataExpert</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <img src="../img/logo.png" alt="DataExpert logo">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html">Početna</a>
+        <a href="../index.html#pantheon">Pantheon</a>
+        <a href="../index.html#reference">Reference</a>
+        <a href="../index.html#cenovnik">Cene</a>
+        <a href="../index.html#novosti" class="active">Novosti</a>
+        <a href="../kontakt.html">Kontakt</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Otvori meni">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="page-header">
+    <h1>Novosti</h1>
+    <p>Pantheon ERP aktuelnosti</p>
+  </div>
+
+  <!-- ARTICLE -->
+  <article class="blog-article">
+    <a href="../index.html#novosti" class="back-link">&#8592; Nazad na novosti</a>
+
+    <h1>Pantheon konferencija — PANCON 2024</h1>
+    <div class="meta">
+      <span>&#128197; 02. april 2024.</span>
+      <span>&#128193; Pantheon</span>
+    </div>
+
+    <p>Konferencija <strong>PANCON 2024</strong> se održava 2 dana na predivnoj lokaciji, u <strong>hotelu Izvor u Aranđelovcu</strong> — <strong>23. i 24. maja 2024.</strong></p>
+
+    <p>Tema konferencije: <em>"Kad se bogovi Panteona sretnu sa tehnologijom"</em></p>
+
+    <p>Pozivamo sve korisnike i partnere da prisustvuju glavnom poslovnom događaju godine posvećenom Pantheon ERP sistemu. Rane prijave su otvorene, a broj mesta je ograničen.</p>
+
+    <h2>Teme konferencije</h2>
+    <ul>
+      <li>Veštačka inteligencija u poslovanju (AION)</li>
+      <li>Usklađenost Pantheona sa novim propisima (Arhivska knjiga, e-fakture, ažurirani SEF)</li>
+      <li>Nove funkcionalnosti obračuna plata</li>
+      <li>eProces — automatizacija radnih tokova</li>
+      <li>Praćenje radnog vremena kroz Pantheon</li>
+      <li>Prilagođena konfiguracija Pantheona</li>
+      <li>Backup podataka i bezbednost</li>
+    </ul>
+
+    <p>Organizatori ohrabruju učesnike da pošalju predloge tema na <a href="mailto:marketing@datalab.rs" style="color: var(--primary); font-weight: 600;">marketing@datalab.rs</a> i obećavaju da će prilagoditi radionice na osnovu interesovanja učesnika.</p>
+
+    <p>Za više informacija i prijavu, <a href="../kontakt.html" style="color: var(--primary); font-weight: 600;">kontaktirajte DataExpert tim</a>.</p>
+  </article>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2024 DataExpert. Sva prava zadržana.</span>
+        <a href="../index.html">Nazad na početnu</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
