@@ -104,7 +104,6 @@ const podnozje = `
     </div>
     <div class="podnozje-dno">
       <span>© ${new Date().getFullYear()} Data Expert. Sva prava zadržana.</span>
-      <span>PANTHEON je zaštićeni znak kompanije Datalab.</span>
     </div>
   </div>
 </footer>
